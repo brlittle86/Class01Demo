@@ -54,6 +54,13 @@ namespace Class01Demo
                 Console.WriteLine(z);
                 z++;
             }
+
+            int n = 0;
+            do
+            {
+                Console.WriteLine(n);
+                n++;
+            } while (n < 5);
         }
     }
 }
