@@ -18,6 +18,7 @@ namespace Class01Demo
             SayHello(47);
 
             IterationStatements();
+            SelectionStatements();
 
             //Console.WriteLine(Console.ReadLine());
 
@@ -61,6 +62,22 @@ namespace Class01Demo
                 Console.WriteLine(n);
                 n++;
             } while (n < 5);
+        }
+
+        static void SelectionStatements()
+        {
+            Console.WriteLine("What is your name?");
+
+            string userInput = Console.ReadLine();
+
+            if (string.IsNullOrEmpty(userInput))
+            {
+                Console.WriteLine("You didn't enter a name. :(");
+            }
+            else
+            {
+                Console.WriteLine($"Thanks {userInput}");
+            }
         }
     }
 }
